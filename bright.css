@@ -1,0 +1,274 @@
+
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url(R.png);
+    background-position: center;
+    background-size: 70%;
+}
+.hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    width: 30px;
+    left: 1200px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.hamburger-menu div {
+    display: flex;
+    height: 4px;
+    background-color: hsl(0, 33%, 99%);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.nav-menu{
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 1000px;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    
+}
+.nav-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu ul li {
+    margin: 10px 0;
+}
+header {
+    background-image: url(tech-.jpg) ;
+    background-position: center;
+    background-size: 1300px;
+    color: #09f3cc; 
+    text-align: center;
+    font-size: x-large;
+    height: 20rem;
+    padding: 1rem;
+}
+nav { 
+    display: flex; 
+    justify-content: center; 
+    background: #0793eb;
+    padding: 0.5em 0; 
+}
+nav a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none;
+}
+section h2 {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0.6rem 0;
+}
+
+#about {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#skills ul{
+    list-style: none;
+    color: #e51b5b;
+}
+#skills ul li {
+    display: inline-block;
+    margin: 0.5rem 3rem;
+    padding: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration-color: #ff6347;
+    background-color: lightcyan;
+    border-radius: 5px;
+}
+
+.projects {
+    color: black;
+    width: 300px;
+    height: 220px;
+    margin: 1rem;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 200px;
+    align-items: center;
+    background-image: url(Logo-innovators-1.png);
+    border: 1px solid #1f0489;
+    border-radius: 5px;
+    text-align: center;
+    width: 98%;
+    font-size: x-large;
+    font-style: initial;
+}
+
+#contact {
+    padding: 1.5rem;
+    text-align: center;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e51b5b;
+    border-radius: 90%;
+    box-shadow: 0px 4px 8px rgba(0,0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+section { 
+    padding: 20px;
+}
+.container {
+     max-width: 1000px; 
+     margin: auto;
+}
+
+.testimonials, .blogs { 
+    background: rgb(127, 200, 240);
+    padding: 20px; 
+}
+
+
+header h1{
+    color: white;
+}
+
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 40px 20px;
+    color: white;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card {
+    flex: 1;
+    min-width: 300px;
+    height: 100%;
+    text-align: center;
+    animation: alternate-reverse;
+}
+.card:nth-child(2){
+    background-color: rgb(10, 244, 178);
+}
+.card:nth-child(3){
+    background-color: gold;
+}
+.card:nth-child(4){
+    background-color: rgb(255, 0, 247);
+}
+
+.testimonials {
+    background-color: #fafafa;
+    padding: 40px;
+    color: white;
+    border-left: 4px solid #333;
+    margin-bottom: 20px;
+}
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.contact-form input  {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: beige;
+    border-color: #16e8e5;
+    border-radius: 5px;
+}
+.contact-form textarea{
+    width: 52%;
+    height: 12rem;
+}
+.contact-form button {
+    display: block;
+    left: 500px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #02fbea;
+    color: #1808f1;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #ff0606;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    background-image: url(tech-.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services, .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(210, 54, 231);}
+    100% {background-color: rgb(72, 202, 228);}
+  }
+.testimonials {
+    position: relative;
+    background-color: rgb(174, 160, 160);
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
