@@ -1,2 +1,2 @@
 # The portfolio 
-Perfect Designing
+Just a startup portfolio of current me.
