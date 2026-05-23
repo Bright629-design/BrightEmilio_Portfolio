@@ -1,2 +1,2 @@
 # The portfolio 
-Just a startup portfolio of me.
+Just a portfolio of me.
